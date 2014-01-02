@@ -1,0 +1,43 @@
+Public Site
+ Main Site
+  - navigation
+  - page content
+ 
+Staff Area
+ Login
+  - username
+  - password
+  ->
+  Menu
+  - manage content
+     -- navigation
+	 -- subject CRUD
+	 -- page CRUD
+  - add users
+     -- user CRUD 
+  - logout
+     -- do logout
+     -- back to login	 
+	 
+
+DATABASE
+widget_corp
+
+TABLES
+
+ subjects
+ -- id int(11)
+ -- menu_name varchar(30)
+ -- position int(3)
+ -- visible tinyint(1)
+ pages
+ -- id int(11) primary key
+ -- subject_id int(11)
+ -- menu_name varchar(30) 
+ -- position int(3)
+ -- visible tinyint(1)
+ -- content text
+ users
+ -- id int(11) primary key
+ -- username varchar(50)
+ -- hashed_password varchar(40)
