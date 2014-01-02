@@ -1,3 +1,3 @@
 cms
 ===
-a simple content management system PHP
+a simple content management system {PHP/MySQL}
